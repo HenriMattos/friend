@@ -18,7 +18,7 @@ const friends = {
         introAudio: "assets/audios/ana-cecilia.wav",
         dedicationAudio: "assets/audios/final.wav",
         song: "assets/songs/Santanna O Cantador - Mãos Que Oferecem Flores.mp3",
-        songText: "Mãos que oferecem flores, gestos que falam de amores..."
+        songText: "...Mãos que oferecem flores..."
     },
         "Ana Cecilia": {
         bojiPhoto: "assets/boji/boji-2.png",
@@ -28,7 +28,7 @@ const friends = {
         introAudio: "assets/audios/ana-cecilia.wav",
         dedicationAudio: "assets/audios/final.wav",
         song: "assets/songs/Santanna O Cantador - Mãos Que Oferecem Flores.mp3",
-        songText: "Mãos que oferecem flores, gestos que falam de amores..."
+        songText: "...Mãos que oferecem flores..."
     },
         "ana cecilia": {
         bojiPhoto: "assets/boji/boji-2.png",
@@ -38,7 +38,7 @@ const friends = {
         introAudio: "assets/audios/ana-cecilia.wav",
         dedicationAudio: "assets/audios/final.wav",
         song: "assets/songs/Santanna O Cantador - Mãos Que Oferecem Flores.mp3",
-        songText: "Mãos que oferecem flores, gestos que falam de amores..."
+        songText: "...Mãos que oferecem flores..."
     },
         "ana cecília": {
         bojiPhoto: "assets/boji/boji-2.png",
@@ -48,7 +48,7 @@ const friends = {
         introAudio: "assets/audios/ana-cecilia.wav",
         dedicationAudio: "assets/audios/final.wav",
         song: "assets/songs/Santanna O Cantador - Mãos Que Oferecem Flores.mp3",
-        songText: "Mãos que oferecem flores, gestos que falam de amores..."
+        songText: "...Mãos que oferecem flores..."
     }
 };
 
