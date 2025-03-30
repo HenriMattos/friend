@@ -19,6 +19,36 @@ const friends = {
         dedicationAudio: "assets/audios/final.wav",
         song: "assets/songs/Santanna O Cantador - Mãos Que Oferecem Flores.mp3",
         songText: "Mãos que oferecem flores, gestos que falam de amores..."
+    },
+        "Ana Cecilia": {
+        bojiPhoto: "assets/boji/boji-2.png",
+        bojiSize: "200px",
+        photo: "assets/boji/boji-2.png", // Não usado diretamente, mas mantido por consistência
+        message: "Ana Cecília, como Sêneca disse, 'A amizade verdadeira é uma planta de crescimento lento.' Sua paciência e cuidado com as pessoas ao seu redor fazem de você uma amiga rara e preciosa, que sabe cultivar laços profundos e duradouros.",
+        introAudio: "assets/audios/ana-cecilia.wav",
+        dedicationAudio: "assets/audios/final.wav",
+        song: "assets/songs/Santanna O Cantador - Mãos Que Oferecem Flores.mp3",
+        songText: "Mãos que oferecem flores, gestos que falam de amores..."
+    },
+        "ana cecilia": {
+        bojiPhoto: "assets/boji/boji-2.png",
+        bojiSize: "200px",
+        photo: "assets/boji/boji-2.png", // Não usado diretamente, mas mantido por consistência
+        message: "Ana Cecília, como Sêneca disse, 'A amizade verdadeira é uma planta de crescimento lento.' Sua paciência e cuidado com as pessoas ao seu redor fazem de você uma amiga rara e preciosa, que sabe cultivar laços profundos e duradouros.",
+        introAudio: "assets/audios/ana-cecilia.wav",
+        dedicationAudio: "assets/audios/final.wav",
+        song: "assets/songs/Santanna O Cantador - Mãos Que Oferecem Flores.mp3",
+        songText: "Mãos que oferecem flores, gestos que falam de amores..."
+    },
+        "ana cecília": {
+        bojiPhoto: "assets/boji/boji-2.png",
+        bojiSize: "200px",
+        photo: "assets/boji/boji-2.png", // Não usado diretamente, mas mantido por consistência
+        message: "Ana Cecília, como Sêneca disse, 'A amizade verdadeira é uma planta de crescimento lento.' Sua paciência e cuidado com as pessoas ao seu redor fazem de você uma amiga rara e preciosa, que sabe cultivar laços profundos e duradouros.",
+        introAudio: "assets/audios/ana-cecilia.wav",
+        dedicationAudio: "assets/audios/final.wav",
+        song: "assets/songs/Santanna O Cantador - Mãos Que Oferecem Flores.mp3",
+        songText: "Mãos que oferecem flores, gestos que falam de amores..."
     }
 };
 
