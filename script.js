@@ -4,10 +4,10 @@ const friends = {
         bojiPhoto: "assets/boji/boji-3.png",
         bojiSize: "250px",
         photo: "assets/boji/boji-2.png", // Não usado diretamente, mas mantido por consistência
-        message: "Rickson, você é o melhor!",
+        message: "Rickson, como Sêneca disse, 'Ninguém pode viver feliz sem amigos.' Sua gratidão genuína e o calor da sua amizade são como alicerces firmes, que sustentam e alegram a vida de todos que têm a sorte de te conhecer.",
         introAudio: "assets/audios/intro.wav",
         dedicationAudio: "assets/audios/final.wav",
-        song: "amigo-estou-aqui.mp3",
+        song: "assets/songs/Banda da Varanda - Amigo Estou Aquí - De  Toy Story.mp3",
         songText: "Amigo estou aqui, amigo estou aqui..."
     },
     "Ana Cecília": {
