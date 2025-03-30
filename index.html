@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boji's friend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela de Boas-Vindas -->
+    <div id="welcome-screen" class="screen">
+        <img src="assets/boji/boji-1.png" alt="Boji" class="boji-photo">
+        <h1 class="hq-title">Oi! Eu sou o Boji!</h1>
+        <p class="hq-text">Aproveite a experiência!</p>
+        <button id="start-button" class="hq-button">Começar</button>
+        <button id="play-welcome" class="hq-button">Ouvir Boji</button>
+        <audio id="welcome-audio" src="assets/audios/intro.wav"></audio>
+    </div>
+
+    <!-- Tela de Nome -->
+    <div id="name-screen" class="screen hidden">
+        <img src="assets/boji/boji-1.png" alt="Boji" class="boji-photo">
+        <h1 class="hq-title">Qual é o seu nome?</h1>
+        <input type="text" id="user-name" placeholder="Digite seu nome" class="hq-input">
+        <button id="submit-name" class="hq-button">Entrar</button>
+    </div>
+
+    <!-- Tela Principal (Carrossel) -->
+    <div id="main-screen" class="screen hidden">
+        <div class="carousel">
+            <div id="card-1" class="carousel-card active">
+                <img id="boji-card-1" src="" alt="Boji" class="boji-photo">
+                <p id="greeting-text" class="hq-text"></p>
+                <button id="play-intro" class="hq-button">Ouvir Boji</button>
+                <audio id="intro-audio" src=""></audio>
+            </div>
+            <div id="card-2" class="carousel-card hidden">
+                <div class="photo-container">
+                    <img id="friend-photo" src="assets/boji/boji-2.png" alt="Boji" class="friend-photo">
+                    <div id="photo-cover" class="photo-cover">
+                        <p class="hq-text">Toque para revelar!</p>
+                    </div>
+                </div>
+                <p id="friend-message" class="hq-text hidden"></p>
+                <button id="play-dedication" class="hq-button hidden">Ouvir Dedicação</button>
+                <audio id="dedication-audio" src=""></audio>
+            </div>
+            <div id="card-3" class="carousel-card hidden">
+                <img id="boji-card-3" src="" alt="Boji" class="boji-photo">
+                <p id="song-text" class="hq-text"></p>
+                <button id="play-song" class="hq-button">Tocar Música</button>
+                <audio id="song-audio" src=""></audio>
+            </div>
+        </div>
+        <button id="prev-button" class="carousel-button hidden">◄</button>
+        <button id="next-button" class="carousel-button hidden">►</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

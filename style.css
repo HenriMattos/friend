@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+    font-family: 'Comic Neue', cursive;
+    margin: 0;
+    height: 100vh;
+    background-color: #fff; /* Branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    text-align: center;
+    background: #fff; /* Branco */
+    padding: 20px; /* Reduzido para telas menores */
+    border-radius: 25px;
+    border: 3px solid #000; /* Preto */
+    box-shadow: 5px 5px 0 #000; /* Sombra preta grande */
+    max-width: 450px;
+    width: 90%;
+    position: relative;
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+}
+
+/* Centraliza todos os elementos filhos */
+.screen > * {
+    margin: 15px auto; /* Reduzido para telas menores */
+    display: block;
+    max-width: 100%;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-card {
+    text-align: center;
+    padding: 15px; /* Reduzido para telas menores */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo HQ */
+.hq-title {
+    color: #000; /* Preto */
+    text-shadow: 4px 4px #fff; /* Sombra branca */
+    font-size: 28px;
+}
+
+.hq-text {
+    color: #000; /* Preto */
+    font-size: 18px;
+}
+
+/* Rich text para a mensagem do Card 2 */
+#friend-message {
+    line-height: 1.5;
+    padding: 10px;
+    background-color: #f0f0f0; /* Fundo leve para parecer anotação */
+    border: 2px dashed #000; /* Borda tracejada para estilo de anotação */
+    border-radius: 10px;
+    max-width: 100%; /* Ajustado para telas menores */
+    margin: 15px auto; /* Reduzido */
+    box-sizing: border-box;
+}
+
+.hq-input {
+    padding: 10px; /* Reduzido */
+    border: 3px solid #000; /* Preto */
+    border-radius: 10px;
+    background-color: #fff; /* Branco */
+    color: #000; /* Preto */
+    width: 80%;
+    max-width: 250px; /* Reduzido */
+    font-size: 14px; /* Reduzido */
+}
+
+.hq-button {
+    padding: 12px 25px; /* Reduzido */
+    background-color: #ffffff; /* Branco */
+    color: #000000; /* Preto */
+    border: 2px solid #000; /* Preto */
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #000; /* Sombra preta */
+    font-size: 14px; /* Reduzido */
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.1s linear; /* Transição suave para o verde */
+}
+
+.hq-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.hq-button:hover:not(:disabled) {
+    box-shadow: 4px 4px 0 #000; /* Sombra aumentada no hover */
+}
+
+/* Fotos */
+.boji-photo {
+    max-width: 300px; /* Ajustado por amigo no JS */
+    width: 100%; /* Responsivo */
+}
+
+.photo-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Garante que o container se ajuste */
+}
+
+.friend-photo {
+    width: 100%; /* Ajustado para responsividade */
+    max-width: 300px; /* Limite máximo */
+    border-radius: 0; /* Sem bordas */
+}
+
+.photo-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff; /* Branco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0; /* Sem bordas */
+    cursor: pointer;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 10px; /* Ajustado para telas menores */
+    transform: translateY(0); /* Removido o translateY para posicionamento fixo */
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 40px; /* Reduzido */
+    height: 40px; /* Reduzido */
+    font-size: 16px; /* Reduzido */
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #000;
+}
+
+.carousel-button:hover:not(.hidden) {
+    box-shadow: 4px 4px 0 #000;
+}
+
+#prev-button {
+    left: 25px; /* Ajustado para telas menores */
+}
+
+#next-button {
+    right: 25px; /* Ajustado para telas menores */
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+    .screen {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .hq-title {
+        font-size: 24px; /* Reduzido */
+        text-shadow: 3px 3px #fff; /* Sombra ajustada */
+    }
+
+    .hq-text {
+        font-size: 16px; /* Reduzido */
+    }
+
+    .hq-input {
+        padding: 8px;
+        max-width: 200px;
+        font-size: 12px;
+    }
+
+    .hq-button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .boji-photo {
+        max-width: 250px; /* Reduzido */
+    }
+
+    .friend-photo {
+        max-width: 250px; /* Reduzido */
+    }
+
+    #friend-message {
+        font-size: 14px; /* Reduzido */
+        padding: 8px;
+        margin: 10px auto;
+    }
+    
+    .carousel-button {
+        top: 0px;
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 12px;
+        box-shadow: 2px 2px 0 #000;
+    }
+
+    #prev-button {
+        left: 15px;
+    }
+
+    #next-button {
+        right: 15px;
+    }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+    body {
+        height: auto; /* Permite rolagem em telas pequenas */
+        padding: 10px; /* Margem externa */
+    }
+
+    .screen {
+        padding: 10px;
+        border-radius: 15px; /* Reduzido */
+        border-width: 2px; /* Borda mais fina */
+        box-shadow: 3px 3px 0 #000; /* Sombra reduzida */
+        width: 95%; /* Quase total da tela */
+    }
+
+    .screen > * {
+        margin: 10px auto; /* Reduzido ainda mais */
+    }
+
+    .carousel-card {
+        padding: 10px;
+    }
+
+    .hq-title {
+        font-size: 20px;
+        text-shadow: 2px 2px #fff;
+    }
+
+    .hq-text {
+        font-size: 14px;
+    }
+
+    .hq-input {
+        padding: 6px;
+        max-width: 180px;
+        font-size: 10px;
+    }
+
+    .hq-button {
+        padding: 8px 15px;
+        font-size: 10px;
+        box-shadow: 2px 2px 0 #000; /* Sombra reduzida */
+    }
+
+    .hq-button:hover:not(:disabled) {
+        box-shadow: 3px 3px 0 #000;
+    }
+
+    .boji-photo {
+        max-width: 200px; /* Reduzido para caber */
+    }
+
+    .friend-photo {
+        max-width: 200px; /* Reduzido */
+    }
+
+    #friend-message {
+        font-size: 12px;
+        padding: 6px;
+        margin: 8px auto;
+    }
+
+    .carousel-button {
+        top: 0px;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 12px;
+        box-shadow: 2px 2px 0 #000;
+    }
+
+    #prev-button {
+        left: 10px;
+    }
+
+    #next-button {
+        right: 10px;
+    }
+}
